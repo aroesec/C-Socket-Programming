@@ -9,5 +9,9 @@ int getaddrinfo(const char *node,    //ip addr
                 const struct addrinfo *hints,
                 struct addrinfo **res)
 {
+    int status;
+    struct addrinfo hints;
+    struct addrinfo *servinfo;
+    memset(&hints, 0, sizeof(hints));
     return 0;
 };
